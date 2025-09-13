@@ -1,0 +1,179 @@
+<html>
+<head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Civicfy</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+  :root {
+    --color-primary: #1e1203;
+    --color-secondary: #ec2d06;
+    --color-accent: #03A9F4;
+    --color-success: #4CAF50;
+    --color-warning: #FFC107;
+    --color-danger: #F44336;
+    --color-background: #F5F5F5;
+    --color-text: #212121;
+    --color-text-secondary: #757575;
+  }
+  .status-resolved { color: var(--color-success); background-color: #E8F5E9; }
+  .status-in-progress { color: var(--color-warning); background-color: #FFF8E1; }
+  .status-pending { color: var(--color-danger); background-color: #FFEBEE; }
+</style>
+</head>
+<body class="bg-[var(--color-background)]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden text-[var(--color-text)]">
+  <div class="layout-container flex h-full grow flex-col">
+
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-4 bg-white">
+    <div class="flex items-center gap-4 text-gray-800">
+      <svg class="h-8 w-8 text-[#ea2a33]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+      </svg>
+      <h2 class="text-gray-800 text-xl font-bold leading-tight tracking-[-0.015em]">Civicfy</h2>
+    </div>
+    <div class="flex flex-1 justify-end items-center gap-6">
+      <nav class="flex items-center gap-8">
+<a class="text-gray-600 hover:text-[#ea2a33] text-base font-medium leading-normal" href="C:\Users\praja\Downloads\homepage.html">Home</a>
+<a class="text-gray-600 hover:text-[#ea2a33] text-base font-medium leading-normal" href="C:\Users\praja\Downloads\communitypage.html">Community</a>
+<a class="text-gray-600 hover:text-[#ea2a33] text-base font-medium leading-normal" href="C:\Users\praja\Downloads\first.html">Profile</a>
+<a class="text-gray-600 hover:text-[#ea2a33] text-base font-medium leading-normal" href="C:\Users\praja\Downloads\gamification.html">About Us</a>
+</nav>
+    </div>
+      <div class="flex flex-1 justify-end items-center gap-6">
+        <button class="flex cursor-pointer items-center justify-center rounded-full h-12 w-12 bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors">
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-[var(--color-primary)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD27gBYmHFmA8OLlIvZSX4C6n_ouki5t-GW4wxqrwK24FzVdygnkmlRw46qKoPy4EhH-A-SLPPVCXeYqHVTZMWPkOmHuXGazYGGRJ7ZH9jVIqgcMhoZAcLk15qlk_yGmNJ9QtX3qqLv0yNjWpM6QD3zVBFqc-kt4kcMyP6s8me0JTAAYjqjcbhYn6XMGV2hw2rmj5VtZ0k825V8Zc86w_3kvi4cLTiU1ERVBpqwvrRZvfsT5rU8r82X65HiTNso6V4FaIzrvfyofNc");'></div>
+      </div>
+  </header>
+  
+    <!-- MAIN -->
+    <main class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8">
+      <div class="layout-content-container flex flex-col w-full max-w-5xl gap-8">
+
+        <!-- WELCOME -->
+        <div class="flex flex-wrap justify-between items-center gap-6 p-6 bg-white rounded-2xl shadow-sm">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-3xl font-bold tracking-tight">Welcome, Priya!</h2>
+            <p class="text-[var(--color-text-secondary)] text-base">Report issues, track progress, and build a better community together.</p>
+          </div>
+          <button class="flex items-center justify-center gap-2 rounded-full h-12 px-6 bg-[var(--color-secondary)] hover:bg-amber-500 text-white text-base font-bold shadow-lg hover:shadow-xl transition-all">
+            <span class="material-symbols-outlined">add_circle</span>
+            <span class="truncate">Report New Issue</span>
+          </button>
+        </div>
+
+        <!-- RECENT ISSUES -->
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <h3 class="text-2xl font-bold tracking-tight mb-6">Recent Issues</h3>
+          <div class="flex flex-col gap-4">
+            <!-- Issue Card 1 -->
+            <div class="flex flex-col md:flex-row items-start gap-4 border border-gray-200 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-4 w-full md:w-auto">
+                <div class="text-[var(--color-danger)] flex items-center justify-center rounded-lg bg-red-50 shrink-0 size-14">
+                  <span class="material-symbols-outlined text-3xl">delete</span>
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p class="text-lg font-semibold">Garbage Overflowing Near Market</p>
+                  <p class="text-sm text-[var(--color-text-secondary)]">Reported 2 days ago</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between w-full md:w-auto md:ml-auto gap-4">
+                <div class="px-3 py-1 text-sm font-medium rounded-full status-in-progress">In Progress</div>
+                <div class="flex items-center gap-2 text-base font-medium text-[var(--color-primary)]">
+                  <span class="material-symbols-outlined">thumb_up</span>
+                  <span>12</span>
+                </div>
+              </div>
+            </div>
+            <!-- Issue Card 2 -->
+            <div class="flex flex-col md:flex-row items-start gap-4 border border-gray-200 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-4 w-full md:w-auto">
+                <div class="text-[var(--color-accent)] flex items-center justify-center rounded-lg bg-blue-50 shrink-0 size-14">
+                  <span class="material-symbols-outlined text-3xl">edit_road</span>
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p class="text-lg font-semibold">Road Crack on Main Street</p>
+                  <p class="text-sm text-[var(--color-text-secondary)]">Reported 5 days ago</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between w-full md:w-auto md:ml-auto gap-4">
+                <div class="px-3 py-1 text-sm font-medium rounded-full status-resolved">Resolved</div>
+                <div class="flex items-center gap-2 text-base font-medium text-[var(--color-primary)]">
+                  <span class="material-symbols-outlined">thumb_up</span>
+                  <span>25</span>
+                </div>
+              </div>
+            </div>
+            <!-- Issue Card 3 -->
+            <div class="flex flex-col md:flex-row items-start gap-4 border border-gray-200 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-4 w-full md:w-auto">
+                <div class="text-blue-600 flex items-center justify-center rounded-lg bg-blue-100 shrink-0 size-14">
+                  <span class="material-symbols-outlined text-3xl">water_drop</span>
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p class="text-lg font-semibold">Water Tap Leak in Sector 4</p>
+                  <p class="text-sm text-[var(--color-text-secondary)]">Reported 1 week ago</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between w-full md:w-auto md:ml-auto gap-4">
+                <div class="px-3 py-1 text-sm font-medium rounded-full status-pending">Pending</div>
+                <div class="flex items-center gap-2 text-base font-medium text-[var(--color-primary)]">
+                  <span class="material-symbols-outlined">thumb_up</span>
+                  <span>8</span>
+                </div>
+              </div>
+            </div>
+            <!-- Issue Card 4 -->
+            <div class="flex flex-col md:flex-row items-start gap-4 border border-gray-200 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+              <div class="flex items-center gap-4 w-full md:w-auto">
+                <div class="text-green-600 flex items-center justify-center rounded-lg bg-green-100 shrink-0 size-14">
+                  <span class="material-symbols-outlined text-3xl">forest</span>
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p class="text-lg font-semibold">Tree Fallen Blocking Sidewalk</p>
+                  <p class="text-sm text-[var(--color-text-secondary)]">Reported 2 weeks ago</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between w-full md:w-auto md:ml-auto gap-4">
+                <div class="px-3 py-1 text-sm font-medium rounded-full status-resolved">Resolved</div>
+                <div class="flex items-center gap-2 text-base font-medium text-[var(--color-primary)]">
+                  <span class="material-symbols-outlined">thumb_up</span>
+                  <span>15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REWARDS -->
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Your Rewards</h3>
+          <div class="flex flex-col gap-3">
+            <div class="flex gap-6 justify-between items-center">
+              <p class="text-lg font-semibold">Civic Points</p>
+              <p class="text-lg font-bold text-[var(--color-primary)]">750 / 1000</p>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div class="h-3 rounded-full bg-[var(--color-secondary)]" style="width: 75%;"></div>
+            </div>
+            <p class="text-[var(--color-text-secondary)] text-sm mt-2">
+              Earn points by reporting issues, voting, and participating. Redeem points for exciting rewards!
+            </p>
+      </div>
+    </main>
+  </div>
+</div>
+<footer class="bg-white border-t border-gray-200">
+    <div class="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <p class="text-gray-500 text-base font-normal leading-normal text-center md:text-right">© 2024 Jharkhand Connect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
