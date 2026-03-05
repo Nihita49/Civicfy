@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Jharkhand Civic Issues Reporting</title>
+<title>India's Civic Issues Reporting</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
@@ -137,5 +137,14 @@
 </div>
 </main>
 </div>
+<script>
+const form = document.querySelector("form");
+const confirmation = document.getElementById("confirmation");
 
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // stop POST request
+  confirmation.classList.remove("hidden"); // show popup
+});
+</script>
 </body></html>
+
